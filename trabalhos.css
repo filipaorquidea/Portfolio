@@ -41,22 +41,59 @@
          opacity: 0.1;
      }
 
+     .home {
+         position: absolute;
+         top: 3vh;
+         left: 5vw;
+         font-size: 20px;
+         cursor: pointer;
+         font-weight: bold;
+         color: #333;
+         z-index: 1000;
+     }
+
+     .about {
+         position: absolute;
+         top: 3vh;
+         right: 5vw;
+         font-size: 20px;
+         cursor: pointer;
+         font-weight: bold;
+         color: #333;
+         z-index: 1000;
+     }
+
+     #headerLine {
+         position: absolute;
+         top: 8vh;
+         left: 5vw;
+         width: 90vw;
+         border: 0.1vh solid #333;
+         opacity: 0.5;
+     }
+
      .texto {
          display: block;
          position: absolute;
          width: 40vw;
          cursor: default;
+         top: 12vh;
          left: 6vw;
          -webkit-user-select: none;
          user-select: none;
+         font-family: 'Personalized', sans-serif;
+         font-size: 45px;
+         word-spacing: 30px;
+         letter-spacing: 10px;
      }
 
      .vertical-line {
          position: absolute;
-         width: 0.1vw;
          height: 45vh;
-         background-color: #333;
+         border: 0.1vh solid #333;
+         top: 11vh;
          left: 50vw;
+         opacity: 0.5;
      }
 
      .contact {
@@ -64,27 +101,32 @@
          position: absolute;
          width: 40vw;
          right: 5vw;
-         bottom: 78vh;
+         bottom: 45vh;
+         font-size: 30px;
      }
 
      hr {
-        position: relative;
-         top: 45vh;
+         position: relative;
+         width: 90vw;
+         top: 55vh;
+         left: 4vw;
+         border: 0.1vh solid #333;
+         opacity: 0.5;
      }
 
      .container {
-        position: relative;
          max-width: 1300px;
-         margin: 0 auto;
-         top: 50vh;
+         margin: 60vh auto 0 auto;
+         position: relative;
      }
 
      .gallery {
          display: grid;
-         overflow: hidden;
          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
          gap: 20px;
+         overflow: visible;
      }
+
 
      .project-card {
          background: white;

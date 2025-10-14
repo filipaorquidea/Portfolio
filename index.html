@@ -6,66 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Design Gráfico</title>
     <link rel="stylesheet" href="trabalhos.css">
-
 </head>
 
 <body>
-    <div class="texto">
-        <h1>FILIPA ORQUÍDEA</h1>
-        <br>
-        <h3>Graphic and Multimedia Designer</h3>
-        <br>
-        Hello! My name is Filipa Orquídea, I am 24 years old and I live in the city of Santo Tirso.
-        I completed my bachelor's and master's degrees in Design and Multimedia at the University of Coimbra.
-        My areas of interest focus on web design, typography, graphic design and computational creativity.
-        I have developed skills in design and programming, thus gaining experience in Adobe Creative Suite programmes,
-        I have developed skills in design and programming, gaining experience in Adobe Creative Suite programmes,
-        Front-End (HTML, CSS and JavaScript),
-        Processing and P5.js.
-        I consider myself to be a hard-working person who always achieves her goals,
-        organised and always motivated to improve my work and develop new skills.
 
+    <header>
+        <div class="home">Filipa Orquidea</div>
+        <div class="about" onclick="location.href='about.html'">About Me</div>
+    </header>
+    <hr id="headerLine">
+    <div class="texto">
+        <h1>Graphic and Multimedia Designer</h1>
     </div>
+
     <div class="vertical-line"></div>
+
     <div class="contact">
         <p>
-            1 de Fevereiro de 2001<br>
-            Santo Tirso, Portugal<br>
-            Email:byfilipaorquidea@gmail.com
+            Hello! I'm Filipa, a graphic and multimedia designer with a passion for creativity and innovation.<p></p>
+            <br> Currently I'm developing a Website for Mente Ativa, Leisure Activities Centre for children and young people to study and have fun.
         </p>
     </div>
 
     <hr>
 
-
     <div class="container">
         <div class="gallery">
-            <div class="project-card" onclick="openModal('project1')">
-                <img src="Images/tese/tese2.png" alt="Sistema Interativo + Identidade Visual">
-            </div>
-            <div class="project-card" onclick="openModal('project2')">
-                <img src="Images/odm/odm11.png" alt="Identidade Visual - Exposição">
-            </div>
-
-            <div class="project-card" onclick="openModal('project3')">
-                <img src="Images/le/le4.png" alt="Design Editorial">
-            </div>
-
-            <div class="project-card" onclick="openModal('project4')">
-                <img src="Images/ta/tp1.jpg" alt="Tipografia Modular">
-            </div>
-
-            <div class="project-card" onclick="openModal('project5')">
-                <img src="Images/p3/p31.JPG" alt="Objeto Editorial">
-            </div>
-
-            <div class="project-card" onclick="openModal('project6')">
-                <img src="Images/tdc/tdc7.png" alt="Sistema Visual - Museu">
-            </div>
-
-            <div class="project-card" onclick="openModal('project7')">
-                <img src="Images/hd/capa bauhaus .PNG" alt="Design Editorial">
-            </div>
+            <!-- Projetos serão carregados dinamicamente da API -->
         </div>
     </div>
 
