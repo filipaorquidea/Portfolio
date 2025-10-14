@@ -95,7 +95,7 @@
 
      .vertical-line {
          position: absolute;
-         height: 115vh;
+         height: 170vh;
          border: 0.1vh solid #333;
          top: 11vh;
          left: 50vw;
@@ -131,6 +131,17 @@
          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      }
 
+     .foto2 {
+         display: block;
+         position: relative;
+         width: 40vw;
+         height: auto;
+         border-radius: 10px;
+         top: 48vh;
+         left: 5vw;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+
      .education {
          display: block;
          position: absolute;
@@ -144,7 +155,43 @@
          position: relative;
          width: 45vw;
          top: 10vh;
-         left: 48.5vw;
+         left: 48.7vw;
+         border: 0.1vh solid #333;
+         opacity: 0.5;
+     }
+
+     .skills {
+         display: block;
+         position: absolute;
+         width: 40vw;
+         right: 5vw;
+         top: 93vh;
+         font-size: 20px;
+     }
+
+     .separator2 {
+         position: relative;
+         width: 45vw;
+         top: 55vh;
+         left: 48.7vw;
+         border: 0.1vh solid #333;
+         opacity: 0.5;
+     }
+
+     .hobbies {
+         display: block;
+         position: absolute;
+         width: 40vw;
+         right: 5vw;
+         top: 137vh;
+         font-size: 20px;
+     }
+
+     .separator3 {
+         position: relative;
+         width: 45vw;
+         top: 104vh;
+         left: 48.7vw;
          border: 0.1vh solid #333;
          opacity: 0.5;
      }
@@ -154,5 +201,5 @@
          text-align: center;
          font-size: 14px;
          color: #666;
-         top: 80vh;
+         top: 60vh;
      }

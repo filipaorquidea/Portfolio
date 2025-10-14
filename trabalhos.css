@@ -306,3 +306,11 @@
          font-size: 0.9em;
          color: #666;
      }
+
+     footer {
+         position: relative;
+         text-align: center;
+         font-size: 14px;
+         color: #666;
+         top: 10vh;
+     }
