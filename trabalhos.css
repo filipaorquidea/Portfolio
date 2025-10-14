@@ -16,8 +16,8 @@
      }
 
      body {
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         background: #000000;
+         font-family: 'Avenir', sans-serif;
+         background: #dcf4c8;
          padding: 40px 20px;
      }
 
@@ -26,33 +26,6 @@
          font-weight: bold;
          color: white;
          z-index: 1000;
-     }
-
-     .HOME {
-         display: block;
-         position: absolute;
-         float: left;
-         top: 5vh;
-         left: 5vw;
-         background-color: black;
-     }
-
-     .ABOUT {
-         display: block;
-         position: absolute;
-         float: left;
-         top: 5vh;
-         left: 9vw;
-         background-color: black;
-     }
-
-     .CONTACT {
-         display: block;
-         position: absolute;
-         float: left;
-         top: 5vh;
-         left: 15vw;
-         background-color: black;
      }
 
      .work {
@@ -65,31 +38,52 @@
          cursor: grab;
          font-family: 'Personalized', sans-serif;
          color: white;
+         opacity: 0.1;
+     }
+
+     .texto {
+         display: block;
+         position: absolute;
+         width: 40vw;
+         cursor: default;
+         left: 6vw;
+         -webkit-user-select: none;
+         user-select: none;
+     }
+
+     .vertical-line {
+         position: absolute;
+         width: 0.1vw;
+         height: 45vh;
+         background-color: #333;
+         left: 50vw;
+     }
+
+     .contact {
+         display: block;
+         position: absolute;
+         width: 40vw;
+         right: 5vw;
+         bottom: 78vh;
+     }
+
+     hr {
+        position: relative;
+         top: 45vh;
      }
 
      .container {
-         position: relative;
-         max-width: 1200px;
+        position: relative;
+         max-width: 1300px;
          margin: 0 auto;
-         top: 10vh;
-     }
-
-     h1 {
-         text-align: center;
-         background-color: rgba(123, 123, 123, 0.9);
-         color: white;
-         border-radius: 10px;
-         font-size: 2.5em;
-         margin-bottom: 40px;
-         letter-spacing: 0.3vw;
-         font-family: 'Roboto', sans-serif;
+         top: 50vh;
      }
 
      .gallery {
          display: grid;
          overflow: hidden;
          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-         gap: 30px;
+         gap: 20px;
      }
 
      .project-card {
@@ -186,14 +180,14 @@
          justify-content: center;
          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
          z-index: 10;
-         transition: transform  0.2s ease;
+         transition: transform 0.2s ease;
      }
 
      .close-btn:hover {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        transform: rotate(90deg);
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         transform: rotate(90deg);
      }
 
      .modal-images {
