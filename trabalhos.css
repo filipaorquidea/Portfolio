@@ -42,7 +42,7 @@
      }
 
      .home {
-         position: absolute;
+         position: fixed;
          top: 3vh;
          left: 5vw;
          font-size: 20px;
@@ -53,7 +53,7 @@
      }
 
      .about {
-         position: absolute;
+         position: fixed;
          top: 3vh;
          right: 5vw;
          font-size: 20px;
