@@ -53,13 +53,7 @@ function processProjects(apiProjects) {
       else if (metadata.video.imgix_url) videoUrl = metadata.video.imgix_url;
     }
 
-    useEffect(() => {
-      if (selectedProject) {
-        videoUrl(selectedProject.videoUrl || null);
-      } else {
-        videoUrl(null);
-      }
-    }, [selectedProject]);
+ 
 
 
     processedProjects[projectId] = {
@@ -162,11 +156,12 @@ function openModal(projectId) {
   // Limpa o conteúdo existente
   thumbnailGrid.innerHTML = '';
 
+  // Remove vídeo existente (se houver)
+  let existingVideo = document.getElementById('mainVideo');
+  if (existingVideo) existingVideo.remove();
+
   // Se houver vídeo, insere no topo
   if (project.video) {
-    let existingVideo = document.getElementById('mainVideo');
-    if (existingVideo) existingVideo.remove();
-
     const videoEl = document.createElement('video');
     videoEl.id = 'mainVideo';
     videoEl.src = project.video;
