@@ -53,6 +53,15 @@ function processProjects(apiProjects) {
       else if (metadata.video.imgix_url) videoUrl = metadata.video.imgix_url;
     }
 
+    useEffect(() => {
+      if (selectedProject) {
+        videoUrl(selectedProject.videoUrl || null);
+      } else {
+        videoUrl(null);
+      }
+    }, [selectedProject]);
+
+
     processedProjects[projectId] = {
       title: project.title,
       date: metadata.date || '',

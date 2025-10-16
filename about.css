@@ -36,7 +36,7 @@
          user-select: none;
          mix-blend-mode: difference;
          z-index: -1;
-         cursor: grab;
+         cursor: none;
          font-family: 'Personalized', sans-serif;
          color: white;
          opacity: 0.1;
@@ -216,4 +216,5 @@
          font-size: 14px;
          color: #666;
          top: 60vh;
+         cursor: none;
      }
