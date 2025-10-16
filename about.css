@@ -147,8 +147,8 @@
          position: absolute;
          width: 40vw;
          right: 5vw;
-         bottom: 20vh;
-         font-size: 20px;
+         bottom: 18vh;
+         font-size: 1.2rem;
      }
 
      .separator {
@@ -165,14 +165,14 @@
          position: absolute;
          width: 40vw;
          right: 5vw;
-         top: 93vh;
-         font-size: 20px;
+         top: 95vh;
+         font-size: 1.2rem;
      }
 
      .separator2 {
          position: relative;
          width: 45vw;
-         top: 55vh;
+         top: 50vh;
          left: 48.7vw;
          border: 0.1vh solid #333;
          opacity: 0.5;
@@ -183,14 +183,14 @@
          position: absolute;
          width: 40vw;
          right: 5vw;
-         top: 137vh;
-         font-size: 20px;
+         top: 135vh;
+         font-size: 1.2rem;
      }
 
      .separator3 {
          position: relative;
          width: 45vw;
-         top: 104vh;
+         top: 98vh;
          left: 48.7vw;
          border: 0.1vh solid #333;
          opacity: 0.5;
