@@ -53,9 +53,6 @@ function processProjects(apiProjects) {
       else if (metadata.video.imgix_url) videoUrl = metadata.video.imgix_url;
     }
 
- 
-
-
     processedProjects[projectId] = {
       title: project.title,
       date: metadata.date || '',
