@@ -5,69 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Filipa Orquídea</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="trabalhos.css">
 </head>
 
 <body>
 
     <header>
-        <div class="home">Filipa Orquídea</div>
+        <div class="home" onclick="location.href='index.html'">Filipa Orquídea</div>
         <div class="about" onclick="location.href='about.html'">About Me</div>
+        <div class="gallery-link" onclick="location.href='Gallery.html'">Gallery</div>
     </header>
-    <hr id="headerLine">
-    
-    <!-- Hero Section com linha de separação -->
-    <section class="hero-section">
-        <div class="texto">
-            <h1>Graphic and Multimedia Designer</h1>
-        </div>
-        
-        <div class="vertical-line"></div>
 
-        <div class="contact">
-            <p>
-                Hello! I'm Filipa, a graphic and multimedia designer with a passion for creativity and innovation.
-                <br><br>
-                Currently I'm developing a Website for Mente Ativa, Leisure Activities Centre for children and young people to study and have fun.
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Gallery -->
-    <div class="container">
-        <div class="gallery">
-            <!-- Projetos serão carregados dinamicamente da API -->
-        </div>
+    <div class="texto">
+        <h1>Graphic and Multimedia Designer</h1>
     </div>
 
-    <!-- Modal -->
-    <div id="modal" class="modal" onclick="closeModalOnBackground(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-
-            <div class="modal-images">
-                <img id="mainImage" class="main-image" src="" alt="">
-
-                <div class="thumbnail-grid" id="thumbnailGrid"></div>
-            </div>
-
-            <div class="project-info">
-                <h2 id="projectTitle"></h2>
-                <div class="project-meta">
-                    <span><span id="projectDate"></span></span>
-                    <span><span id="projectClient"></span></span>
-                </div>
-                <div class="project-description" id="projectDescription"></div>
-                <div class="tags" id="projectTags"></div>
-            </div>
-        </div>
+    <div class="texto2">
+        <h3>Welcome to my portfolio</h3>
     </div>
 
-    <footer>
-        &copy; 2025 Filipa Orquídea. All rights reserved.
-    </footer>
-    
-    <script src="trabalhos.js"></script>
+    <div class="texto3">
+        <h3>Filipa Orquídea</h3>
+    </div>
 </body>
 
 </html>

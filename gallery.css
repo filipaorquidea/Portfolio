@@ -1,0 +1,332 @@
+body {
+    position: relative;
+    top: 10vh;
+}
+
+/* Projects Section */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 5vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    padding: 20px;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease;
+    cursor: pointer;
+}
+
+.modal.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 15px;
+    position: relative;
+    animation: slideUp 0.4s ease;
+    cursor: default;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.modal-images {
+    padding: 40px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-info {
+    padding: 0 40px 40px 40px;
+}
+
+.project-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.project-meta {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    color: #666;
+    flex-wrap: wrap;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-description {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 40px 0 20px 0;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: calc(10vh + 40px) 5vw 40px 5vw;
+        min-height: auto;
+    }
+    
+    .vertical-line {
+        display: none;
+    }
+    
+    .texto {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        letter-spacing: 0.1em;
+    }
+    
+    .contact {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+        padding: 0 6vw;
+    }
+    
+    #headerLine {
+        top: 80px;
+    }
+    
+    .hero-section {
+        padding: 120px 6vw 40px 6vw;
+    }
+    
+    .texto {
+        font-size: 1.8rem;
+        letter-spacing: 0.08em;
+    }
+    
+    .contact {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        padding: 40px 6vw;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-card img {
+        height: 200px;
+    }
+    
+    /* Modal ajustes mobile */
+    .modal-content {
+        margin: 20px;
+        border-radius: 10px;
+    }
+    
+    .modal-images {
+        padding: 20px;
+    }
+    
+    .project-info {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .thumbnail {
+        height: 100px;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .home, .about {
+        font-size: 14px;
+    }
+    
+    .texto {
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .contact {
+        font-size: 1rem;
+    }
+    
+    .hero-section {
+        padding: 100px 5vw 30px 5vw;
+    }
+    
+    .project-card h3 {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .project-info h2 {
+        font-size: 1.5em;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

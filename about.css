@@ -1,89 +1,11 @@
-@font-face {
-    font-family: 'Personalized';
-    src: url('data/Vector_O.otf') format('opentype');
-}
 
-html {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Avenir', sans-serif;
-    background: #dcf4c8;
-    padding: 0;
-    color: #4b734d;
-    min-height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    z-index: 1000;
-}
-
-.work {
-    position: absolute;
-    font-size: 10vw;
-    -webkit-user-select: none;
-    user-select: none;
-    mix-blend-mode: difference;
-    z-index: -1;
-    cursor: none;
-    font-family: 'Personalized', sans-serif;
-    color: white;
-    opacity: 0.1;
-}
-
-/* Header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10vh;
-    min-height: 60px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-}
-
-.home, .about {
-    font-size: clamp(16px, 3vw, 20px);
-    cursor: pointer;
-    font-weight: bold;
-    color: #4b734d;
-    z-index: 1000;
-}
-
-#headerLine {
-    position: fixed;
-    top: 10vh;
-    width: 100%;
-    left: 0;
-    border: 0;
-    border-top: 1px solid rgba(75, 115, 77, 0.3);
-    z-index: 999;
-    margin: 0;
-}
 
 /* Main Content */
 .content {
     padding-top: calc(10vh + 60px);
     max-width: 1600px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 /* Seção do título "About Me" */
@@ -92,7 +14,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px 5vw;
-    border-bottom: 1px solid rgba(75, 115, 77, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .texto {
@@ -101,7 +23,7 @@ header {
     font-family: 'Personalized', sans-serif;
     font-size: clamp(1.5rem, 4vw, 6vw);
     letter-spacing: 0.2em;
-    color: #4b734d;
+    color: #ffffff;
 }
 
 .texto h1 {
@@ -139,7 +61,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 60px 5vw;
-    border-bottom: 1px solid rgba(75, 115, 77, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     align-items: start;
 }
 
@@ -148,10 +70,10 @@ header {
 }
 
 .foto, .foto2 {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .education, .skills, .hobbies {
