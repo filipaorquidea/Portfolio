@@ -2,10 +2,9 @@
 
 /* Main Content */
 .content {
-    padding-top: calc(10vh + 60px);
     max-width: 1600px;
-    margin: 0 auto;
     color: #ffffff;
+    height: auto;
 }
 
 /* Seção do título "About Me" */

@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+}
+
+/* contentor principal */
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* cada secção */
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.texto {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Personalized', sans-serif;
+    font-size: clamp(3rem, 5vw, 3.5vw);
+    letter-spacing: 0.15em;
+    padding: 0.5vw 30vw;
+    top: 10vh;
+    color: #ffffff;
+}
+
+.texto{
+    line-height: 1.3;
+}
+
+.texto2 {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Avenir', sans-serif;
+    font-size: clamp(2rem, 3vw, 2vw);
+    bottom: 45vh;
+    padding-left: 48vw;
+    color: #ffffff;
+}
+
+.texto3 {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Avenir', sans-serif;
+    font-size: clamp(1.5rem, 2vw, 1.5vw);
+    bottom: 118vh;
+    transform: rotate(-90deg);
+    right: 25vw;
+    color: #ffffff;
+}
+
+img {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 30vw;
+    height: auto;
+    top: 20vh;
+    left: 10vw;
+    filter: saturate(0);
+}
+
+text {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    -webkit-user-select: none;
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    left: 45vw;
+    bottom: 20vh;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+a {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Avenir', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    left: 45vw;
+    bottom: 15vh;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.title {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Personalized', sans-serif;
+    font-size: clamp(3rem, 5vw, 3.5vw);
+    letter-spacing: 0.15em;
+    top: 15vh;
+    left: 15vw;
+    color: #ffffff;
+}
+
+.work-image {
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    height: auto;
+    top: 20vh;
+    filter: saturate(0);
+}
+
+.draggable {
+    position: absolute;
+    font-size: 10vw;
+    -webkit-user-select: none;
+    user-select: none;
+    mix-blend-mode: difference;
+    z-index: -100;
+    color: #ffffff;
+    opacity: 0.2;
+  }
