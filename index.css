@@ -26,7 +26,6 @@ html {
     font-size: clamp(3rem, 5vw, 3.5vw);
     letter-spacing: 0.15em;
     padding: 0.5vw 30vw;
-    top: 10vh;
     color: #ffffff;
 }
 
@@ -40,7 +39,7 @@ html {
     user-select: none;
     font-family: 'Avenir', sans-serif;
     font-size: clamp(2rem, 3vw, 2vw);
-    bottom: 45vh;
+    bottom: 55vh;
     padding-left: 48vw;
     color: #ffffff;
 }
@@ -51,19 +50,19 @@ html {
     user-select: none;
     font-family: 'Avenir', sans-serif;
     font-size: clamp(1.5rem, 2vw, 1.5vw);
-    bottom: 118vh;
+    bottom: 128vh;
     transform: rotate(-90deg);
     right: 25vw;
     color: #ffffff;
 }
 
-img {
+.profile-image {
     position: relative;
     -webkit-user-select: none;
     user-select: none;
     width: 30vw;
     height: auto;
-    top: 20vh;
+    top: 10vh;
     left: 10vw;
     filter: saturate(0);
 }
@@ -73,11 +72,12 @@ text {
     position: relative;
     width: 50vw;
     -webkit-user-select: none;
+    user-select: none;
     flex-direction: column;
     justify-content: center;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
     left: 45vw;
-    bottom: 20vh;
+    bottom: 30vh;
     line-height: 1.6;
     color: #ffffff;
 }
@@ -89,7 +89,7 @@ a {
     font-family: 'Avenir', sans-serif;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
     left: 45vw;
-    bottom: 15vh;
+    bottom: 25vh;
     line-height: 1.6;
     color: #ffffff;
 }
@@ -101,9 +101,17 @@ a {
     font-family: 'Personalized', sans-serif;
     font-size: clamp(3rem, 5vw, 3.5vw);
     letter-spacing: 0.15em;
-    top: 15vh;
+    top: 5vh;
     left: 15vw;
     color: #ffffff;
+}
+
+.work-container {
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    height: 20vh;
+    margin-right: 1vw; /* Espaçamento entre as imagens */
 }
 
 .work-image {
@@ -111,9 +119,23 @@ a {
     position: relative;
     -webkit-user-select: none;
     user-select: none;
+    width: 30vw;
     height: auto;
-    top: 20vh;
+    top: 15vh;
+    left: 5vw;
+    border-radius: 10px;
     filter: saturate(0);
+}
+
+.work-title {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Avenir', sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    top: 15vh;
+    left: 5vw;
+    color: #ffffff;
 }
 
 .draggable {
